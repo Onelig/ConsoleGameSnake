@@ -73,7 +73,9 @@ int main()
 		Sleep(200);
 	}
 	system("cls");
-	std::cout << "Game over\n";
+
+	std::cout << "Game over\n Time: " << minutes << " min " << seconds << "sec\n Score: " << score << std::endl;
+	Sleep(1000);
 	return 0;
 }
 
@@ -91,7 +93,7 @@ void SetBaseInfo()
 		std::cout << "2 - Medium arena\n";
 		std::cout << "3 - Huge arena";
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), COORD{ sizeof("Choose the size of the playing field:"), 0 });
-
+		
 		if (!(std::cin >> *arena_tshort))
 		{
 			isCin = true;
