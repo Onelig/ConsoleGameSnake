@@ -74,7 +74,7 @@ int main()
 	}
 	system("cls");
 
-	std::cout << "Game over\n Time: " << minutes << " min " << seconds << "sec\n Score: " << score << std::endl;
+	std::cout << "Game over\n Time: " << minutes << " min " << seconds << "sec\n Score: " << score << std::endl ;
 	Sleep(1000);
 	return 0;
 }
